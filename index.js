@@ -110,16 +110,14 @@ const generateHTML = (Inquiry_DataObject) =>
         if (Inquiry_DataObject.github) // if Inquiry_DataObject.github is true, then assign the value of Inquiry_DataObject.githubUsername to the variable github
             {
                 githubUsername = `My github userName: ${Inquiry_DataObject.githubUsername}`;
-
-                $(".container").createElement("h3").textContent = githubUsername;
-                
+      
     
              
             }
 
         if (Inquiry_DataObject.linkedin) {
             linkedinUsername = `My LinkedIn userName: ${Inquiry_DataObject.linkedinUsername}`;
-            $(".container").createElement("h3").textContent = linkedinUsername;
+     
    
             }
 
@@ -159,15 +157,32 @@ const generateHTML = (Inquiry_DataObject) =>
         <h6>Prefered contact: ${Inquiry_DataObject.contact}</h6>
         <br>
       <h3>Example heading <span class="badge bg-secondary">Contact Me</span></h3>
+
+
     <div class="container">
-    Data:-----------------
+
+     <script>
+    if (${Inquiry_DataObject.github}) {
+            h1.innerHTML = 'My github userName: ${githubUsername}'
+       document.write('<h4><a href="www.github.com/${Inquiry_DataObject.githubUsername}">GitHub</a></h4>') 
+      
+    }
+    if (${Inquiry_DataObject.linkedin}) {
+        document.write('<h4><a href="www.linkedin.com/${Inquiry_DataObject.linkedinUsername}">LinkedIn</a></h4>') 
+
+    }
+
+
+    </script>
     </div>
+
+
     </div>
   </header>
 </body>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-</html>;`;
+</html>`;
 }
 
 
