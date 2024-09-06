@@ -96,13 +96,6 @@ const init =() => {
     });
 }
 
-
-init();
-
-
-
-
-
 const generateHTML = (Inquiry_DataObject) =>
     {
         let githubUsername = '';
@@ -185,10 +178,6 @@ const generateHTML = (Inquiry_DataObject) =>
 </html>`;
 }
 
-
-
-
-
 const Programing_Languages = (languages) =>{
     let allLanguages = [];
   
@@ -208,3 +197,7 @@ const Programing_Languages = (languages) =>{
     };
   };
   
+
+
+  // Function call to initialize app
+  init();
