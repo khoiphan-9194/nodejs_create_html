@@ -78,7 +78,7 @@ console.log(questions);
 
 
 // function to prompt user input answers
-const  promptUser = (dataInquiry) => {
+const promptUser = (dataInquiry) => {
     return  inquirer.prompt(dataInquiry); //returning the inquirer.prompt method
   };
   
