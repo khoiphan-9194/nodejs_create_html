@@ -1,29 +1,60 @@
-# Module 09 Mini-Project: Portfolio Generator
+# Project: Portfolio Generator
 
 In this activity, you will build a command-line tool that generates an HTML portfolio page from user input.
 
-## Instructions
+[![License: MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/license/mit/)
+## Purpose
 
-* Your application should prompt the user for information like their name, location, bio, LinkedIn URL, and GitHub URL. Feel free to add any additional prompts you think of.
+This application is a command-line tool designed to help users quickly generate a personalized HTML portfolio page. By answering a series of prompts, users can create a professional-looking portfolio that displays their information and skills.
 
-* An HTML document containing the information collected from the prompts should be constructed and written to the file system. Make sure to add some CSS styling to the document.
+## Technologies Used
 
-* You’ll need the following tools and technologies to accomplish this:
+- Node.js
+- Inquirer (for command-line prompts)
+- JavaScript
 
-  * `fs` for writing to the file system
+## How to Use
 
-  * `inquirer` version 8.2.4 for collecting user input
+1. Clone or download the repository to your local machine.
+2. Open a terminal and navigate to the project directory.
+3. Install the required dependencies by running:
+  ```
+  npm install
+  ```
+4. Start the application with:
+  ```
+  node index.js
+  ```
+5. Answer the questions presented in the terminal. The application will use your responses to generate an HTML file displaying your information.
+6. Open the generated HTML file in your browser to view your portfolio.
 
-  * String template literals for generating a string version of the HTML document before it is written to the file system
+## Screenshots
 
-## 💡 Hints
+Below are some screenshots demonstrating the application's usage and the generated portfolio:
 
-It might be a good idea to start building out the HTML skeleton in a real HTML file. Once you're happy with the HTML file's appearance in the browser, you can copy and paste its contents into a string template literal. Then you can write a function to insert the user input into the appropriate places in the HTML string before writing it to the file system.
+### Command-Line Prompts
 
-## 🏆 Bonus
+![Command-Line Prompts](./img/s1.jpg)
 
-* Instead of using callback functions, what are some other tools in JavaScript we can use to handle asynchronous functionality?
 
----
 
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+![Command-Line Prompts](./img/s2.jpg)
+
+after answered all questions, html will be generated automatically
+
+
+### Generated Portfolio Example
+
+![Generated Portfolio](./img/s3.jpg)
+
+
+## Questions?
+  
+### Github:[khoiphan-9194](https://github.com/khoiphan-9194)
+  
+### Reach Me Via Email: phanminhkhoi91@gmail.com
+
+Thanks for viewing!
+
+<img src="https://raw.githubusercontent.com/its-jefe/image-hosting/main/goal-pole.png" width="20%">
+
